@@ -1,0 +1,122 @@
+/* .containar{
+    padding: 15px 9%;
+} */
+.containar .card-containar{
+    
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 0;
+width: 100%;
+
+}
+.containar.card-containar .card-List{
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.textitems{
+    text-align: center;
+    margin-top: 100px;
+    
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.textitems p{
+    padding: 30px;
+    text-align:justify;
+    color: gray;
+}
+.card-List-1{
+    background: url(../assets/images/desktop/image-transform.jpg);
+    height: 600px;
+}
+.card-List-2{
+    background: url(../assets/images/desktop/image-stand-out.jpg);
+    height: 600px;
+}
+.card-List-3{
+    text-align: center;
+    background: url(../assets/images/desktop/image-graphic-design.jpg);
+    height: 600px;
+     display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card-List-4{
+    background: url(../assets/images/desktop/image-photography.jpg);
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.textview{
+    margin: 0 0 130px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(64, 70, 73);
+}
+.textview p{
+    text-align: justify;
+    justify-content: center;
+    width: 400px;
+    align-items: center;
+}
+.textview1{
+    margin: 0 0 130px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: rgb(64, 70, 73);
+}
+.textview1 p{
+    text-align: justify;
+    justify-content: center;
+    width: 400px;
+    align-items: center;
+}
+@media screen and (max-width: 768px) {
+    .containar .card-containar {
+        grid-template-columns: 1fr; 
+    }
+
+    .textitems {
+        width: 90%;
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+
+    .textitems p {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+
+    .card-List-1,
+    .card-List-2,
+    .card-List-3,
+    .card-List-4 {
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .textview p,
+    .textview1 p {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .textview,
+    .textview1 {
+        margin: 40px 0;
+        padding: 10px;
+    }
+}

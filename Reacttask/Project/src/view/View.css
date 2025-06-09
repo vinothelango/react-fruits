@@ -1,0 +1,12 @@
+.grid-containar {
+    width: 100vw;
+    display: flex;
+    /* flex-direction: row; */
+    
+}
+
+.grids-containar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
