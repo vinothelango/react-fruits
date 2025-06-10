@@ -1,32 +1,35 @@
-import React, { useState } from 'react'
-import './Navbar.css'
+import React, { useState } from 'react';
+import './Navbar.css';
+import Logo from '../../assets/images/desktop/logo.svg';
 
-import Logo from "../../assets/images/desktop/logo.svg"
-
-const Navbar = () => {
+const Navbar = ({ onHomeClick, onAboutClick, onServiceClick, onContactClick }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleClick = (callback) => {
+    callback();
+    setMenuOpen(false);
+  };
 
   return (
-      <nav className="navbar">
-      <img src={Logo} alt="" color='#00686a'/>
+    <nav className="navbar">
+      <img src={Logo} alt="logo" />
+
       <div className="menu-icon" onClick={toggleMenu}>
         ☰
       </div>
 
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><button onClick={() => handleClick(onHomeClick)}>Home</button></li>
+        <li><button onClick={() => handleClick(onAboutClick)}>About</button></li>
+        <li><button onClick={() => handleClick(onServiceClick)}>Services</button></li>
+        <li><button onClick={() => handleClick(onContactClick)}>Contact</button></li>
       </ul>
     </nav>
+  );
+};
 
-  )
-}
-  
-export default Navbar
+export default Navbar;
