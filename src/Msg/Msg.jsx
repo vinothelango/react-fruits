@@ -10,17 +10,17 @@ import alice from '../assets/images/desktop/pexels-kampus-5920774.jpg'
 const testimonials = [
   {
     name: "Alice Johnson",
-    text: "This service is fantastic. Highly recommended!",
+    text: "This service is fantastic. Highly recommended This service is fantastic. Highly recommended!This service is fantastic. Highly recommended!",
     role: "Product Manager",
   },
   {
     name: "Mark Lee",
-    text: "Great user experience and top-notch support.",
+    text: "This service is fantastic. Highly recommended!Great user experience and top-notch support.This service is fantastic. Highly recommended!",
     role: "Developer",
   },
   {
     name: "Sara Kim",
-    text: "Super intuitive and reliable solution. Loved it!",
+    text: "This service is fantastic. Highly recommended!Super intuitive and reliable solution. Loved it!This service is fantastic. Highly recommended!",
     role: "UX Designer",
     
   },
@@ -28,7 +28,9 @@ const testimonials = [
 
 const TestimonialSlider = () => {
   return (
+        
       <div className="testimonial-slider-container">
+        <h1 className="clinet">Client Testmonial</h1>,
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}

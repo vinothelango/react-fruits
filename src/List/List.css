@@ -24,15 +24,17 @@ width: 100%;
 .textitems{
     text-align: center;
     margin-top: 100px;
-    
-    
     display: flex;
     flex-direction: column;
-   
+   color: rgb(0, 0, 0);
+}
+.textitems h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
 }
 .textitems p{
     padding: 30px;
-    text-align:justify;
+    justify-content: center;
     color: gray;
 }
 .card-List-1{
@@ -124,5 +126,10 @@ width: 100%;
     .textview1 {
         margin: 40px 0;
         padding: 10px;
+    }
+    .card-List-1,
+    .card-List-2{
+        display: flex;
+        flex-direction: row-reverse;
     }
 }
