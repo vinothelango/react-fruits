@@ -1,6 +1,4 @@
-/* .containar{
-    padding: 15px 9%;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
  * {
     margin: 0;
     padding: 0;
@@ -16,9 +14,10 @@ width: 100%;
 
 }
 .containar.card-containar .card-List{
+    height: 100%;
     border-radius: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     width: 100%;
     box-shadow: 0 10px 15px rgba(red, green, blue, alpha);
     transform: scale(1.03);
@@ -27,16 +26,31 @@ width: 100%;
   
 .textitems{
     text-align: center;
-    margin-top: 100px;
+    justify-content: center;
+    /* margin-top: 100px; */
+     height: 100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
    color: rgb(0, 0, 0);
+           
+
 }
 .textitems h1{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
+        width: 60%;
+        text-align: left;
+        color: black;
+        
+}
+.textitems h3{
+    width: 60%;
+        text-align: left;
+ padding: 30px;
+    cursor: pointer;
 }
 .textitems p{
+    width: 60%;
+    text-align: left;
     padding: 30px;
     justify-content: center;
     color: gray;
@@ -98,12 +112,15 @@ width: 100%;
 @media screen and (max-width: 768px) {
     .containar .card-containar {
         grid-template-columns: 1fr; 
+
     }
 
     .textitems {
-        width: 90%;
-        margin-top: 50px;
+
+        align-items: center;
         padding: 0 15px;
+        height: 100%;
+        margin-bottom: 2rem;
     }
 
     .textitems p {

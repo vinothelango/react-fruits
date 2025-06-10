@@ -34,7 +34,7 @@ const TestimonialSlider = () => {
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
-        navigation
+        // navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 4000 }}
         loop
