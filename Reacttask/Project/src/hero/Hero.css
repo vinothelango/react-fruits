@@ -1,6 +1,6 @@
 
 .herocontainar{
-   width: 100vw;
+   width: 100%;
    min-height: 100vh;
     background-repeat: no-repeat;
     background-image: url(../assets/images/desktop/image-header.jpg);
@@ -21,4 +21,37 @@
 }
 li{
     color: white;
+}
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 48px;
+    }
+    .hero-text {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 36px;
+    }
+    .hero-text {
+        margin-bottom: 60px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .herocontainar {
+        padding: 20px;
+        background-image: url(../assets/images/mobile/image-header.jpg);
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+    }
+
+    .hero-text {
+        margin-bottom: 40px;
+    }
 }

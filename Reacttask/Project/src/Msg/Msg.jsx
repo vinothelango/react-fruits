@@ -32,11 +32,17 @@ const TestimonialSlider = () => {
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
-        slidesPerView={3}
         navigation
         pagination={{ clickable: true }}
         autoplay={{ delay: 4000 }}
         loop
+        breakpoints={
+          {
+            0 :{slidesPerView:1},
+            // 768 :{slidesPerView:2},
+            1024 :{slidesPerView:3}
+          }
+        }
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
