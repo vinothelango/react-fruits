@@ -23,6 +23,9 @@ const Navbar = ({ onHomeClick, onAboutClick, onServiceClick, onContactClick }) =
       </div>
 
       <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
+        <li className="back-btn">
+          <button onClick={toggleMenu}>← Back</button>
+          </li>
         <li><button onClick={() => handleClick(onHomeClick)}>Home</button></li>
         <li><button onClick={() => handleClick(onAboutClick)}>About</button></li>
         <li><button onClick={() => handleClick(onServiceClick)}>Services</button></li>

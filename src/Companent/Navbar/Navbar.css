@@ -63,10 +63,33 @@ ul.nav-links li a {
   }
 
   ul.nav-links.active {
-    right: 0%;
+    right: -5%;
   }
 
   ul.nav-links li {
     margin: 20px 0;
   }
 }
+
+.back-btn {
+  display: none;
+  width: 100%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.back-btn button {
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .back-btn {
+    display: block;
+  }
+}
+
